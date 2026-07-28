@@ -18,7 +18,7 @@ A modern calculator built with HTML, CSS, and JavaScript featuring a soft pastel
 
 ## 📸 Project Showcase
 
-![Calculator](images/calculator-preview.jpg)
+![Calculator](calculator-preview.jpg)
 
 
 ## 🌐 Live Demo
@@ -27,17 +27,14 @@ A modern calculator built with HTML, CSS, and JavaScript featuring a soft pastel
 
 ## 📂 Project Structure 
 
+```
+Glassmorphism-Calculator/
 │── index.html
-
-│── style.cse
-
+│── style.css
 │── script.js
-
+│── calculator-preview.jpg
 │── README.md
-
-│── screenshot.jpg
-
-│── LICENSE
+```
 
 ## 👩🏻‍💻 Author
 
