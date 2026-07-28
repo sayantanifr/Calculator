@@ -1,0 +1,1193 @@
+/*=========================================
+        GOOGLE FONT
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+/*=========================================
+        RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Nunito",sans-serif;
+}
+
+/*=========================================
+        BODY
+=========================================*/
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    overflow:hidden;
+
+    padding:30px;
+
+    position:relative;
+
+    background:
+    radial-gradient(circle at top left,#FFD8EC 0%,transparent 28%),
+    radial-gradient(circle at top right,#FFE7B5 0%,transparent 30%),
+    radial-gradient(circle at bottom left,#DDF8FF 0%,transparent 30%),
+    radial-gradient(circle at bottom right,#EBD8FF 0%,transparent 28%),
+    linear-gradient(
+    135deg,
+    #FFF9FC,
+    #FFF1F8,
+    #FFF8FD
+    );
+
+    background-size:300% 300%;
+
+    animation:backgroundMove 12s ease infinite;
+
+}
+
+/*=========================================
+      BACKGROUND ANIMATION
+=========================================*/
+
+@keyframes backgroundMove{
+
+0%{
+
+background-position:
+0% 0%,
+100% 0%,
+0% 100%,
+100% 100%,
+0% 50%;
+
+}
+
+50%{
+
+background-position:
+8% 10%,
+92% 5%,
+10% 92%,
+90% 90%,
+100% 50%;
+
+}
+
+100%{
+
+background-position:
+0% 0%,
+100% 0%,
+0% 100%,
+100% 100%,
+0% 50%;
+
+}
+
+}
+
+/*=========================================
+      FLOATING BUBBLES
+=========================================*/
+
+.bubble{
+
+position:absolute;
+
+border-radius:50%;
+
+filter:blur(10px);
+
+animation:float 8s ease-in-out infinite;
+
+pointer-events:none;
+
+}
+
+/* Bubble 1 */
+
+.bubble1{
+
+width:180px;
+
+height:180px;
+
+background:#FFD7EA;
+
+left:5%;
+
+top:5%;
+
+}
+
+/* Bubble 2 */
+
+.bubble2{
+
+width:120px;
+
+height:120px;
+
+background:#DCCEFF;
+
+right:10%;
+
+top:15%;
+
+animation-delay:2s;
+
+}
+
+/* Bubble 3 */
+
+.bubble3{
+
+width:160px;
+
+height:160px;
+
+background:#FFF0AE;
+
+left:10%;
+
+bottom:8%;
+
+animation-delay:4s;
+
+}
+
+/* Bubble 4 */
+
+.bubble4{
+
+width:220px;
+
+height:220px;
+
+background:#CFF9D7;
+
+right:3%;
+
+bottom:5%;
+
+animation-delay:1s;
+
+}
+
+/* Bubble 5 */
+
+.bubble5{
+
+width:90px;
+
+height:90px;
+
+background:#FFD8EC;
+
+left:50%;
+
+top:40%;
+
+animation-delay:3s;
+
+}
+
+/*=========================================
+      FLOAT ANIMATION
+=========================================*/
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0px);
+
+}
+
+25%{
+
+transform:translateY(-15px);
+
+}
+
+50%{
+
+transform:translateY(-30px);
+
+}
+
+75%{
+
+transform:translateY(-12px);
+
+}
+
+}
+/*=========================================
+        MAIN CALCULATOR
+=========================================*/
+
+.calculator{
+
+    width:100%;
+
+    max-width:650px;
+
+    padding:38px;
+
+    border-radius:42px;
+
+    position:relative;
+
+    z-index:10;
+
+    background:rgba(255,248,252,.82);
+
+    backdrop-filter:blur(25px);
+
+    border:3px solid rgba(255,255,255,.90);
+
+    box-shadow:
+
+    0 35px 70px rgba(255,175,205,.30),
+
+    0 12px 28px rgba(255,255,255,.90) inset,
+
+    0 3px 8px rgba(255,255,255,.95) inset;
+
+    animation:calculatorFloat 5s ease-in-out infinite;
+
+}
+
+/*=========================================
+        FLOATING ANIMATION
+=========================================*/
+
+@keyframes calculatorFloat{
+
+0%,100%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
+
+/*=========================================
+        GLOSSY SHINE
+=========================================*/
+
+.calculator::before{
+
+content:"";
+
+position:absolute;
+
+left:18px;
+
+right:18px;
+
+top:18px;
+
+height:95px;
+
+border-radius:35px;
+
+background:
+
+linear-gradient(
+
+rgba(255,255,255,.80),
+
+rgba(255,255,255,0)
+
+);
+
+pointer-events:none;
+
+}
+
+/*=========================================
+        OUTER GLOW
+=========================================*/
+
+.calculator::after{
+
+content:"";
+
+position:absolute;
+
+inset:-12px;
+
+border-radius:45px;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+rgba(255,205,225,.20),
+
+rgba(255,255,255,0)
+
+);
+
+filter:blur(8px);
+
+z-index:-1;
+
+}
+
+/*=========================================
+        CALCULATOR HOVER
+=========================================*/
+
+.calculator:hover{
+
+box-shadow:
+
+0 45px 80px rgba(255,170,205,.35),
+
+0 15px 35px rgba(255,255,255,.90) inset,
+
+0 4px 12px rgba(255,255,255,.95) inset;
+
+transition:.35s;
+
+}
+/*=========================================
+            DISPLAY
+=========================================*/
+
+.display{
+
+height:200px;
+
+margin-bottom:28px;
+
+padding:28px;
+
+border-radius:30px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:flex-end;
+padding-bottom:22px;
+
+align-items:flex-end;
+
+position:relative;
+
+overflow:hidden;
+
+background: linear-gradient(145deg,#FFF8FC,#FFE3EF);
+
+border:3px solid rgba(255,255,255,.92);
+
+backdrop-filter:blur(8px);
+
+box-shadow:
+
+inset 0 8px 14px rgba(255,255,255,.95),
+
+inset 0 -5px 12px rgba(255,180,210,.28),
+
+0 12px 30px rgba(255,170,205,.28);
+
+}
+
+/* Gloss */
+
+.display::before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:55%;
+
+background:
+
+linear-gradient(
+
+rgba(255,255,255,.60),
+
+rgba(255,255,255,0)
+
+);
+
+border-radius:30px;
+
+pointer-events:none;
+
+}
+
+/* Previous Expression */
+
+#expression{
+
+width:100%;
+
+text-align:right;
+
+font-size:22px;
+
+font-weight:600;
+
+color:#B44D75;
+
+margin-bottom:10px;
+
+overflow:hidden;
+
+text-overflow:ellipsis;
+
+white-space:nowrap;
+
+}
+
+/* Current Number */
+
+#display{
+
+width:100%;
+
+text-align:right;
+
+font-size:clamp(58px,9vw,90px);
+
+font-weight:800;
+
+color:#D81B60;
+
+letter-spacing:0;
+
+text-shadow:none;
+
+overflow:hidden;
+
+text-overflow:ellipsis;
+
+white-space:nowrap;
+
+}
+/*=========================================
+            BUTTON GRID
+=========================================*/
+
+.buttons{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:18px;
+
+}
+
+/*=========================================
+            ALL BUTTONS
+=========================================*/
+
+button{
+
+height:88px;
+
+border:none;
+
+outline:none;
+
+cursor:pointer;
+
+border-radius:24px;
+
+font-family:"Nunito",sans-serif;
+
+font-size:30px;
+
+font-weight:700;
+
+position:relative;
+
+overflow:hidden;
+
+transition:
+
+transform .25s ease,
+
+background .25s ease,
+
+box-shadow .25s ease,
+
+filter .25s ease;
+
+box-shadow:
+
+0 5px 12px rgba(255,175,205,.18),
+
+inset 0 2px 4px rgba(255,255,255,.85);
+
+}
+
+/* Shine */
+
+button::before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:45%;
+
+background:
+
+linear-gradient(
+
+rgba(255,255,255,.65),
+
+rgba(255,255,255,0)
+
+);
+
+pointer-events:none;
+
+}
+
+/* Hover */
+
+button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+
+0 18px 28px rgba(255,170,205,.35),
+
+inset 0 3px 8px rgba(255,255,255,.9);
+
+}
+
+/* Click */
+
+button:active{
+
+transform:scale(.93);
+
+}
+
+/*=========================================
+            NUMBER BUTTONS
+=========================================*/
+
+.number{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#FFFFFF,
+
+#FFF7FB
+
+);
+
+color:#5D4B63;
+
+}
+
+.number:hover{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#FFFDFE,
+
+#FFF0F7
+
+);
+
+}
+
+/*=========================================
+            FUNCTION BUTTONS
+=========================================*/
+
+.function{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#FFD6E8,
+
+#FFC5DE
+
+);
+
+color:#D81B60;
+font-weight:800;
+
+}
+
+.function:hover{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#FFC8E0,
+
+#FFB6D6
+
+);
+
+}
+
+/*=========================================
+            OPERATORS
+=========================================*/
+
+.operator{
+
+color:white;
+
+}
+
+/* Divide */
+
+.operator[data-operator="÷"]{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#C8B5FF,
+
+#AF97FF
+
+);
+
+}
+
+/* Multiply */
+
+.operator[data-operator="×"]{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#FFE08E,
+
+#FFD26D
+
+);
+
+color:#7D5200;
+
+}
+
+/* Minus */
+
+.operator[data-operator="−"]{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#D6C6FF,
+
+#BFAEFF
+
+);
+
+}
+
+/* Plus */
+
+.operator[data-operator="+"]{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#D5FFAF,
+
+#BDF58E
+
+);
+
+color:#2C8D00;
+
+}
+
+/*=========================================
+            BACKSPACE
+=========================================*/
+
+.backspace{
+
+font-size:36px;
+font-weight:800;
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#FFDCEA,
+
+#FFCDE2
+
+);
+
+color:#FF4D8D;
+
+}
+
+/*=========================================
+            EQUALS
+=========================================*/
+
+.equals{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#FF83B5,
+
+#FF4F8F
+
+);
+
+color:white;
+
+font-size:40px;
+font-weight:900;
+
+box-shadow:
+
+0 12px 28px rgba(255,90,160,.40),
+
+inset 0 3px 8px rgba(255,255,255,.35);
+
+}
+
+.equals:hover{
+
+filter:brightness(1.08);
+
+}
+
+/*=========================================
+        BUTTON RIPPLE EFFECT
+=========================================*/
+
+button::after{
+
+content:"";
+
+position:absolute;
+
+width:0;
+
+height:0;
+
+left:50%;
+
+top:50%;
+
+background:rgba(255,255,255,.35);
+
+border-radius:50%;
+
+transform:translate(-50%,-50%);
+
+transition:.45s;
+
+}
+
+button:active::after{
+
+width:220px;
+
+height:220px;
+
+opacity:0;
+
+}
+/* ===========================
+   Brand
+=========================== */
+
+.brand{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#FF8BB6;
+
+    letter-spacing:6px;
+
+    font-size:20px;
+
+    font-weight:800;
+
+}
+
+/*=========================================
+            BRAND
+=========================================*/
+
+.brand{
+
+margin-top:22px;
+
+text-align:center;
+
+font-size:20px;
+
+font-weight:800;
+
+letter-spacing:8px;
+
+color:#FF8CB8;
+
+text-transform:uppercase;
+
+animation:brandGlow 3s ease-in-out infinite;
+
+}
+
+@keyframes brandGlow{
+
+0%,100%{
+
+opacity:1;
+
+text-shadow:
+
+0 0 8px rgba(255,180,215,.4);
+
+}
+
+50%{
+
+opacity:.85;
+
+text-shadow:
+
+0 0 20px rgba(255,140,190,.8);
+
+}
+
+}
+
+/*=========================================
+      SMOOTH FADE ANIMATION
+=========================================*/
+
+.calculator,
+.display,
+button{
+
+animation-duration:.6s;
+
+animation-fill-mode:both;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.calculator{
+
+animation-name:fadeUp,calculatorFloat;
+
+animation-duration:.7s,5s;
+
+animation-iteration-count:1,infinite;
+
+animation-timing-function:ease,ease-in-out;
+
+}
+
+/*=========================================
+        SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#FFC6E1;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#FFF7FB;
+
+}
+
+/*=========================================
+        MOBILE (TABLETS)
+=========================================*/
+
+@media(max-width:768px){
+
+body{
+
+padding:20px;
+
+}
+
+.calculator{
+
+max-width:100%;
+
+padding:28px;
+
+border-radius:34px;
+
+}
+
+.display{
+
+height:180px;
+
+padding:22px;
+
+margin-bottom:22px;
+
+}
+
+#display{
+
+font-size:64px;
+
+}
+
+#expression{
+
+font-size:20px;
+
+}
+
+button{
+
+height:78px;
+
+font-size:26px;
+
+border-radius:20px;
+
+}
+
+.buttons{
+
+gap:14px;
+
+}
+
+.brand{
+
+font-size:17px;
+
+letter-spacing:5px;
+
+}
+
+}
+
+/*=========================================
+        MOBILE (PHONES)
+=========================================*/
+
+@media(max-width:600px){
+
+body{
+
+padding:15px;
+
+}
+
+.calculator{
+
+padding:22px;
+
+border-radius:28px;
+
+}
+
+.display{
+
+height:165px;
+
+padding:20px;
+
+}
+
+#display{
+
+font-size:52px;
+
+}
+
+#expression{
+
+font-size:18px;
+
+}
+
+button{
+
+height:68px;
+
+font-size:22px;
+
+border-radius:18px;
+
+}
+
+.buttons{
+
+gap:12px;
+
+}
+
+.brand{
+
+margin-top:18px;
+
+font-size:15px;
+
+letter-spacing:4px;
+
+}
+
+}
+
+/*=========================================
+      SMALL PHONES
+=========================================*/
+
+@media(max-width:400px){
+
+.calculator{
+
+padding:16px;
+
+}
+
+.display{
+
+height:145px;
+
+padding:16px;
+
+}
+
+#display{
+
+font-size:42px;
+
+}
+
+#expression{
+
+font-size:16px;
+
+}
+
+button{
+
+height:58px;
+
+font-size:19px;
+
+border-radius:15px;
+
+}
+
+.buttons{
+
+gap:10px;
+
+}
+
+.brand{
+
+font-size:13
