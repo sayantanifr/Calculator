@@ -28,10 +28,15 @@ A modern calculator built with HTML, CSS, and JavaScript featuring a soft pastel
 ## 📂 Project Structure 
 
 │── index.html
-│── style.css
+
+│── style.cse
+
 │── script.js
+
 │── README.md
+
 │── screenshot.jpg
+
 │── LICENSE
 
 ## 👩🏻‍💻 Author
