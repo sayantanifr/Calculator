@@ -1,4 +1,4 @@
-# ✨ Glassmorphism Calculator
+## ⚡ Calculator
 
 A modern calculator built with HTML, CSS, and JavaScript featuring a soft pastel glassmorphism UI.
 
@@ -37,3 +37,4 @@ A modern calculator built with HTML, CSS, and JavaScript featuring a soft pastel
 Sayantani Sikdar
 
 ## 🪪 License 
+This project is licensed under the MIT License.
