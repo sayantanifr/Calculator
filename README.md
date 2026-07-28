@@ -23,7 +23,7 @@ A modern calculator built with HTML, CSS, and JavaScript featuring a soft pastel
 
 ## 🌐 Live Demo
 
-(Add GitHub Pages link here)
+https://sayantanifr.github.io/Calculator/
 
 ## 📂 Project Structure 
 
