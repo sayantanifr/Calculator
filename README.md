@@ -16,21 +16,23 @@ A modern calculator built with HTML, CSS, and JavaScript featuring a soft pastel
 - CSS3
 - JavaScript (Vanilla)
 
-## 📸 Screenshot
+## 📸 Project Showcase
 
-(Add a screenshot here)
+![Calculator](images/calculator-preview.jpg)
+
 
 ## 🌐 Live Demo
 
 (Add GitHub Pages link here)
 
 ## 📂 Project Structure 
+
 │── index.html
 │── style.css
 │── script.js
 │── README.md
-│── screenshot.png
-│── LICENSE (optional)
+│── screenshot.jpg
+│── LICENSE
 
 ## 👩🏻‍💻 Author
 
